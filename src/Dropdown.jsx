@@ -21,7 +21,7 @@ class Dropdown extends Component {
     const { isDropped } = this.state;
 
     return (
-      <React.Fragment>
+      <div>
         <button
           className="Button"
           id={id}
@@ -32,9 +32,11 @@ class Dropdown extends Component {
           {this.props.title}
         </button>
         {isDropped && (
-          <ul>{React.Children.map(children, child => <li>{child}</li>)}</ul>
+          <ul style={{}}>
+            {React.Children.map(children, child => <li>{child}</li>)}
+          </ul>
         )}
-      </React.Fragment>
+      </div>
     );
   }
 }

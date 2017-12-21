@@ -18,9 +18,21 @@ storiesOf("Dropdown", module).add("isHoverable", () => (
   </Dropdown>
 ));
 storiesOf("Dropdown", module).add("not isHoverable", () => (
-  <Dropdown title="hello" id="drop" isHoverable={false}>
-    <Dropitem>One</Dropitem>
-    <Dropitem>Two</Dropitem>
-    <Dropitem>Three</Dropitem>
-  </Dropdown>
+  <React.Fragment>
+    <Dropdown className="lknklnlknlknlknlk" title="hello" id="drop" isHoverable={false}>
+      <Dropitem>One</Dropitem>
+      <Dropitem>Two</Dropitem>
+      <Dropitem>Three</Dropitem>
+    </Dropdown>
+    <Dropdown title="hello" id="drop" isHoverable={false}>
+      <Dropitem>One</Dropitem>
+      <Dropitem>Two</Dropitem>
+      <Dropitem>Three</Dropitem>
+    </Dropdown>
+    <Dropdown title="hello" id="drop" isHoverable={false}>
+      <Dropitem>One</Dropitem>
+      <Dropitem>Two</Dropitem>
+      <Dropitem>Three</Dropitem>
+    </Dropdown>
+  </React.Fragment>
 ));
